@@ -15,7 +15,7 @@ use Spryker\Zed\Kernel\Persistence\AbstractEntityManager;
 class GiftCardBalanceEntityManager extends AbstractEntityManager implements GiftCardBalanceEntityManagerInterface
 {
     /**
-     * @param list<int> $salesOrderIds
+     * @param array<int> $salesOrderIds
      *
      * @return void
      */

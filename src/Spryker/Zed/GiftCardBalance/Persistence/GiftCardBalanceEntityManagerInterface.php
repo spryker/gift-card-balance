@@ -10,7 +10,7 @@ namespace Spryker\Zed\GiftCardBalance\Persistence;
 interface GiftCardBalanceEntityManagerInterface
 {
     /**
-     * @param list<int> $salesOrderIds
+     * @param array<int> $salesOrderIds
      *
      * @return void
      */
