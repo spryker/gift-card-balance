@@ -38,9 +38,6 @@ class GiftCardBalanceBusinessFactory extends AbstractBusinessFactory
         return new GiftCardBalanceSaver();
     }
 
-    /**
-     * @return \Spryker\Zed\GiftCardBalance\Business\Deleter\GiftCardBalanceLogDeleterInterface
-     */
     public function createGiftCardBalanceLogDeleter(): GiftCardBalanceLogDeleterInterface
     {
         return new GiftCardBalanceLogDeleter(

@@ -36,9 +36,6 @@ class DeleteGiftCardBalanceLogCollectionTest extends Unit
      */
     protected GiftCardBalanceBusinessTester $tester;
 
-    /**
-     * @return void
-     */
     public function testDeletesFoundBySalesOrderIdsGiftCardBalanceLogs(): void
     {
         // Arrange
@@ -58,9 +55,6 @@ class DeleteGiftCardBalanceLogCollectionTest extends Unit
         $this->assertGiftCardBalanceLogs($saveOrderTransfer1, $saveOrderTransfer2, $giftCardTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testDoesNothingWhenGiftCardBalanceLogsAreNotFoundBySalesOrderIds(): void
     {
         // Arrange
@@ -79,13 +73,6 @@ class DeleteGiftCardBalanceLogCollectionTest extends Unit
         $this->assertGiftCardBalanceLogs($saveOrderTransfer1, $saveOrderTransfer2, $giftCardTransfer);
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\SaveOrderTransfer $saveOrderTransfer1
-     * @param \Generated\Shared\Transfer\SaveOrderTransfer $saveOrderTransfer2
-     * @param \Generated\Shared\Transfer\GiftCardTransfer $giftCardTransfer
-     *
-     * @return void
-     */
     protected function assertGiftCardBalanceLogs(
         SaveOrderTransfer $saveOrderTransfer1,
         SaveOrderTransfer $saveOrderTransfer2,

@@ -11,11 +11,6 @@ use Generated\Shared\Transfer\GiftCardBalanceLogCollectionDeleteCriteriaTransfer
 
 interface GiftCardBalanceLogDeleterInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\GiftCardBalanceLogCollectionDeleteCriteriaTransfer $giftCardBalanceLogCollectionDeleteCriteriaTransfer
-     *
-     * @return void
-     */
     public function deleteGiftCardBalanceLogCollection(
         GiftCardBalanceLogCollectionDeleteCriteriaTransfer $giftCardBalanceLogCollectionDeleteCriteriaTransfer
     ): void;

@@ -17,9 +17,6 @@ class GiftCardBalanceChecker implements GiftCardBalanceCheckerInterface
      */
     protected $giftCardBalanceQueryContainer;
 
-    /**
-     * @param \Spryker\Zed\GiftCardBalance\Persistence\GiftCardBalanceQueryContainerInterface $giftCardBalanceQueryContainer
-     */
     public function __construct(GiftCardBalanceQueryContainerInterface $giftCardBalanceQueryContainer)
     {
         $this->giftCardBalanceQueryContainer = $giftCardBalanceQueryContainer;

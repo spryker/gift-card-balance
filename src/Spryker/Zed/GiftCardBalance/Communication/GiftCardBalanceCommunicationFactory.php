@@ -43,9 +43,6 @@ class GiftCardBalanceCommunicationFactory extends AbstractCommunicationFactory
         return $this->getProvidedDependency(GiftCardBalanceDependencyProvider::FACADE_MONEY);
     }
 
-    /**
-     * @return \Spryker\Zed\GiftCardBalance\Dependency\Service\GiftCardBalanceToUtilDateTimeServiceInterface
-     */
     public function getUtilDateTimeService(): GiftCardBalanceToUtilDateTimeServiceInterface
     {
         return $this->getProvidedDependency(GiftCardBalanceDependencyProvider::SERVICE_UTIL_DATE_TIME);

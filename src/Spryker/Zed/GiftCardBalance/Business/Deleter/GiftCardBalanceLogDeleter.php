@@ -12,18 +12,10 @@ use Spryker\Zed\GiftCardBalance\Persistence\GiftCardBalanceEntityManagerInterfac
 
 class GiftCardBalanceLogDeleter implements GiftCardBalanceLogDeleterInterface
 {
-    /**
-     * @param \Spryker\Zed\GiftCardBalance\Persistence\GiftCardBalanceEntityManagerInterface $giftCardBalanceEntityManager
-     */
     public function __construct(protected GiftCardBalanceEntityManagerInterface $giftCardBalanceEntityManager)
     {
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\GiftCardBalanceLogCollectionDeleteCriteriaTransfer $giftCardBalanceLogCollectionDeleteCriteriaTransfer
-     *
-     * @return void
-     */
     public function deleteGiftCardBalanceLogCollection(
         GiftCardBalanceLogCollectionDeleteCriteriaTransfer $giftCardBalanceLogCollectionDeleteCriteriaTransfer
     ): void {

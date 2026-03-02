@@ -56,11 +56,6 @@ class GiftCardBalanceDependencyProvider extends AbstractBundleDependencyProvider
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addUtilDateTimeService(Container $container): Container
     {
         $container->set(static::SERVICE_UTIL_DATE_TIME, function (Container $container) {

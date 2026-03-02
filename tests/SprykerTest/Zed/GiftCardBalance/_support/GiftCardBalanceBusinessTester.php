@@ -32,13 +32,6 @@ class GiftCardBalanceBusinessTester extends Actor
 {
     use _generated\GiftCardBalanceBusinessTesterActions;
 
-    /**
-     * @param int $idGiftCard
-     * @param int $idSalesOrder
-     * @param int $value
-     *
-     * @return void
-     */
     public function createGiftCardBalanceLogEntity(int $idGiftCard, int $idSalesOrder, int $value): void
     {
         $giftCardBalanceLogEntity = new SpyGiftCardBalanceLog();
@@ -68,9 +61,6 @@ class GiftCardBalanceBusinessTester extends Actor
         return $giftCardBalanceLogEntitiesIndexedByIdSalesOrder;
     }
 
-    /**
-     * @return \Orm\Zed\GiftCardBalance\Persistence\SpyGiftCardBalanceLogQuery
-     */
     protected function getGiftCardBalanceLogQuery(): SpyGiftCardBalanceLogQuery
     {
         return SpyGiftCardBalanceLogQuery::create();
